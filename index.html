@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>El Mundo del Jazz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: #111;
+            color: #f4f4f4;
+        }
+
+        header {
+            background: linear-gradient(to right, #000, #3a1c71);
+            padding: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 3px;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #f4f4f4;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        section {
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #ffcc00;
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 10px;
+        }
+
+        .card {
+            background-color: #1c1c1c;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 204, 0, 0.2);
+        }
+
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #aaa;
+        }
+
+        button {
+            background-color: #ffcc00;
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #ffaa00;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>El Mundo del Jazz</h1>
+    <p>Historia, artistas y estilos que marcaron una era</p>
+</header>
+
+<nav>
+    <a href="#historia">Historia</a>
+    <a href="#artistas">Artistas</a>
+    <a href="#estilos">Estilos</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="historia">
+    <h2>Historia del Jazz</h2>
+    <div class="card">
+        <p>
+            El jazz nació a finales del siglo XIX en Nueva Orleans, combinando influencias africanas,
+            blues, ragtime y música europea. Se caracteriza por la improvisación, el ritmo sincopado
+            y la expresión emocional.
+        </p>
+    </div>
+</section>
+
+<section id="artistas">
+    <h2>Artistas Legendarios</h2>
+
+    <div class="card">
+        <h3>Louis Armstrong</h3>
+        <p>Trompetista y cantante pionero del jazz tradicional.</p>
+    </div>
+
+    <div class="card">
+        <h3>Miles Davis</h3>
+        <p>Innovador del jazz moderno y creador del cool jazz.</p>
+    </div>
+
+    <div class="card">
+        <h3>John Coltrane</h3>
+        <p>Uno de los saxofonistas más influyentes en la historia del jazz.</p>
+    </div>
+
+</section>
+
+<section id="estilos">
+    <h2>Estilos de Jazz</h2>
+
+    <div class="card">
+        <h3>Jazz Tradicional</h3>
+        <p>También conocido como Dixieland, fue el estilo original de Nueva Orleans.</p>
+    </div>
+
+    <div class="card">
+        <h3>Bebop</h3>
+        <p>Estilo rápido y complejo desarrollado en los años 40.</p>
+    </div>
+
+    <div class="card">
+        <h3>Cool Jazz</h3>
+        <p>Un enfoque más relajado y sofisticado del jazz moderno.</p>
+    </div>
+
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <div class="card">
+        <p>¿Quieres saber más sobre el jazz?</p>
+        <button onclick="mostrarMensaje()">Haz clic aquí</button>
+    </div>
+</section>
+
+<footer>
+    © 2026 El Mundo del Jazz | Página creada con HTML y CSS
+</footer>
+
+<script>
+    function mostrarMensaje() {
+        alert("¡Gracias por tu interés en el Jazz! 🎷");
+    }
+</script>
+
+</body>
+</html>
