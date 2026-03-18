@@ -202,7 +202,7 @@ padding: 10px;
 border-radius: 10px;
 }
 #h1s{
-  display: flex;
+  display: inline-block;
 }
 
 .galeria h3 {
