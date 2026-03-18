@@ -175,7 +175,6 @@ background: #111;
 padding: 10px;
 border-radius: 10px;
 }
-
 #h1s{
   display: flex;
 }
@@ -197,5 +196,10 @@ text-align: center;
 }
 
 }
+#mcp1, #laf, #revuelto, #chir {
+  width: 70px;
+  max-width: 60%;
+
+  height: 70px;
 
 }
