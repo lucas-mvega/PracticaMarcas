@@ -198,6 +198,12 @@ border-radius: 10px;
 color: #fff;
 }
 
+.hist article {
+width: 250px;
+background: #111;
+padding: 10px;
+border-radius: 10px;
+}
 .galeria article {
 width: 250px;
 background: #111;
