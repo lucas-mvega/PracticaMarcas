@@ -176,6 +176,10 @@ padding: 10px;
 border-radius: 10px;
 }
 
+#h1s{
+  display: flex;
+}
+
 .galeria h3 {
 color: red;
 }
