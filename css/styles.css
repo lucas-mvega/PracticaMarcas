@@ -133,9 +133,7 @@ text-align: center;
     height: auto;      /* mantiene proporción */
     border-radius: 10px;
 }
-.hist img:target {
-border: 4px solid red;
-}
+
 .galeria img {
 width: 90%;
 border-radius: 10px;
@@ -200,12 +198,34 @@ border-radius: 10px;
 color: #fff;
 }
 
-.hist article {
-width: 250px;
-background: #111;
-padding: 10px;
-border-radius: 10px;
+/* CONTENEDOR DE IMÁGENES DE HISTORIA */
+.hist {
+    display: flex;
+    flex-wrap: wrap;      /* evita superposición */
+    justify-content: center;
+    gap: 20px;            /* separación entre imágenes */
+    padding: 20px;
 }
+
+/* CADA ARTÍCULO DE IMAGEN */
+.hist article {
+    width: 200px;         /* tamaño uniforme */
+    background: #111;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* IMÁGENES DE LOS COCHES */
+.hist img {
+    width: 100%;          /* que no se salgan del artículo */
+    max-width: 180px;     /* tamaño razonable */
+    height: auto;         /* mantiene proporción */
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
 .galeria article {
 width: 250px;
 background: #111;
