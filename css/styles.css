@@ -1,0 +1,192 @@
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+background: radial-gradient(circle at top, #1f3b4d, #0a0a0a);
+color: white;
+}
+
+/* HEADER */
+header {
+background: black;
+padding: 20px;
+text-align: center;
+}
+
+header p {
+color: #ccc;
+}
+
+/* NAV */
+nav ul {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+list-style: none;
+padding: 0;
+background: #222;
+}
+
+nav li {
+margin: 10px;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+font-size: 18px;
+padding: 5px 10px;
+}
+
+nav a:hover {
+color: red;
+}
+
+/* Reset básico */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* HERO solo imagen */
+.hero {
+  background-image: url('../img/slk.jpg'); /* ruta correcta a la imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px; /* altura del hero */
+}
+
+/* INTRO: título y frase debajo del hero */
+.intro {
+  text-align: center;
+  padding: 40px 20px;
+  color: white;
+}
+
+/* Mantener resto de secciones limpias y visibles */
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+article {
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+article:hover {
+  transform: scale(1.05);
+}
+
+p::first-letter {
+  font-size: 24px;
+  color: red;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  article {
+    width: 90%;
+  }
+}
+
+/* GALERÍA */
+.galeria article {
+text-align: center;
+}
+
+.galeria img {
+width: 100%;
+border-radius: 10px;
+transition: 0.4s;
+}
+
+.galeria img:hover {
+transform: scale(1.1);
+}
+
+/* TARGET */
+.galeria img:target {
+border: 4px solid red;
+}
+
+/* FOOTER */
+footer {
+text-align: center;
+padding: 15px;
+background: black;
+margin-top: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+section {
+flex-direction: column;
+align-items: center;
+}
+
+article {
+width: 90%;
+}
+
+.hero {
+padding: 20px;
+}
+
+
+/* SECCIÓN COCHES */
+.coches article {
+display: flex;
+align-items: center;
+gap: 15px;
+background: linear-gradient(135deg, #ff4d4d, #660000);
+}
+
+.coches img {
+width: 150px;
+border-radius: 10px;
+}
+
+.coches h2 {
+color: #fff;
+}
+
+.galeria article {
+width: 250px;
+background: #111;
+padding: 10px;
+border-radius: 10px;
+}
+
+.galeria h3 {
+color: red;
+}
+@media (max-width: 600px) {
+
+.coches article {
+flex-direction: column;
+text-align: center;
+}
+
+.coches img {
+  width: 0.3%; /* ocupa 30% del contenedor */
+  max-width: 180px; /* nunca más grande que esto */
+  border-radius: 10px;
+}
+
+}
+
+}
