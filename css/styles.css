@@ -107,6 +107,27 @@ p::first-letter {
 .galeria article {
 text-align: center;
 }
+.historia img{
+  
+    display: block;   /* cada imagen en su “bloque”, evita superposición */
+    margin: 10px 0;   /* espacio entre imágenes */
+
+    max-width: 100%;   /* nunca más ancha que su contenedor */
+    max-height: 200px; /* ajusta altura máxima */
+    width: auto;       /* mantiene proporción original */
+    height: auto;      /* mantiene proporción original */
+
+}
+.imagenes-container {
+    display: flex;
+    flex-wrap: wrap;   /* permite que las imágenes “bajen” de línea */
+    gap: 10px;         /* espacio entre imágenes */
+}
+
+.imagenes-container img {
+    max-width: 200px;  /* limita ancho de cada imagen */
+    height: auto;      /* mantiene proporción */
+}
 
 .galeria img {
 width: 90%;
