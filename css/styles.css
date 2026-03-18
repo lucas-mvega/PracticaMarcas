@@ -107,7 +107,7 @@ p::first-letter {
 .galeria article {
 text-align: center;
 }
-.historia img{
+.hist img{
   
     display: block;   /* cada imagen en su “bloque”, evita superposición */
     margin: 10px 0;   /* espacio entre imágenes */
