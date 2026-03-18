@@ -199,32 +199,7 @@ color: #fff;
 }
 
 /* CONTENEDOR DE IMÁGENES DE HISTORIA */
-.hist {
-    display: flex;
-    flex-wrap: wrap;      /* evita superposición */
-    justify-content: center;
-    gap: 20px;            /* separación entre imágenes */
-    padding: 20px;
-}
-
-/* CADA ARTÍCULO DE IMAGEN */
-.hist article {
-    width: 200px;         /* tamaño uniforme */
-    background: #111;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-/* IMÁGENES DE LOS COCHES */
-.hist img {
-    width: 100%;          /* que no se salgan del artículo */
-    max-width: 180px;     /* tamaño razonable */
-    height: auto;         /* mantiene proporción */
-    border-radius: 10px;
-    display: block;
-    margin: 0 auto;
-}
+.
 
 .galeria article {
 width: 250px;
@@ -259,5 +234,82 @@ text-align: center;
 
   height: 70px;
 
+}
+
+
+/* SECCIÓN HISTORIA: TEXTO */
+.hist-texto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hist-texto article {
+  background: #111;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 350px;
+}
+
+/* SECCIÓN HISTORIA: IMÁGENES */
+.hist {
+  display: flex;
+  flex-wrap: wrap;      /* evita superposición */
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.hist article {
+  width: 180px;         /* no ocupan tanto */
+  background: #111;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.hist img {
+  width: 100%;          /* no se salen del artículo */
+  max-width: 160px;     /* tamaño contenido */
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* GALERÍA (por si acaso) */
+.galeria article {
+  width: 220px;
+  background: #111;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* MEDIA QUERIES LIMPIAS */
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  article {
+    width: 90%;
+  }
+
+  .hist {
+    flex-direction: row;
+  }
+
+  .hist article {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hist article {
+    width: 80%;
+  }
 }
 }
